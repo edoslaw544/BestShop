@@ -38,8 +38,11 @@ header{
     box-shadow: 0px 3px 6px #00000029;
 
 }
+.logo-container{
+    flex-grow: 2;
+}
 .logo{
-    flex-grow: 1;
+    display: inline-block;
     font-size: 32px;
     color: var(--color-primary);
     padding: 16px 100px;
@@ -71,9 +74,102 @@ nav{
 }
 .menu>li>a:active{
     border: 1px dotted var(--color-gray);
-
-
 }
-nav > li{
+/*ENG HEADER*/
 
+/*SECTION*/
+.section-one{
+    height: 100vh;
+    background-image: url("../assets/Background.png");
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-align: center;
+    }
+.title{
+    color: var(--color-black);
+    font-family: var(--font-raleway);
+    font-size: 49px;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 20px;
 }
+.contents{
+    color: var(--color-black);
+    font-family: var(--font-open-sans);
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.btn-main{
+    margin-top: 30px;
+    display: inline-block;
+    padding: 22px 150px;
+    background-color: var(--color-primary);
+    color:var(--color-white);
+    border-radius: 40px;
+    box-shadow: 5px 10px 14px #07ACE629;
+}
+/*END SECTION ONE*/
+
+/*SECTION TWO*/
+.title-stats{
+    margin-top: 100px;
+    text-align: center;
+    color: var(--color-black);
+    font-family: var(--font-raleway);
+    font-size: 36px;
+}
+.column{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    margin-top: 100px;
+}
+.clm>img{
+    position: absolute;
+    left: 50%;
+    z-index: 1;
+}
+.clm::after{
+    content:"";
+    width: 63px;
+    height: 63px;
+    border-radius: 50px;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.clm-one::after{
+    background-color: var(--color-redish);
+}
+.clm-two::after{
+    background-color: var(--color-primary);
+}
+.clm-three::after{
+    background-color: var(--color-green);
+}
+.stats-value{
+    display: inline-block;
+    margin-top: 100px;
+    text-align: center;
+    color: var(--color-black);
+    font-family: var(--font-raleway);
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 5.96px;
+}
+.stats-value-content{
+    /*display: inline-block;*/
+    margin-top: 20px;
+    color: var(--color-gray);
+    font-family:var(--font-raleway);
+    font-size: 17px;
+    text-align: center;
+}
+
+
+
+
